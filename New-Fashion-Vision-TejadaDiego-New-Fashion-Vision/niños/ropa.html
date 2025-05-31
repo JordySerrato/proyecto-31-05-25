@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Ropa</title>
+    <link rel="stylesheet" href="niños.css">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="reloj.png" class="menu-icono" alt="Menu Icon">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index/index1.html">Inicio</a></li>
+                    <li><a href="../niños/Tienda.html">Tienda</a></li>
+                    <li><a href="../contacto-nosotros/contacto.html">Contacto</a></li>
+                    <li><a href="../contacto-nosotros/sobre-nosotros.html">Nosotros somos</a></li>
+                    <li><img src="../niños/imagenes4/Carrito de compras.jpg" alt="carrito de compras" onclick="toggleCart()"></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="background-animation"></div>
+        <div class="header-content">
+            <h1>Catálogo de Hombres</h1>
+            <p>Para hombres activos y conscientes, KineHomePulse es la pulsera perfecta que transforma tu movimiento en energía. Carga tus dispositivos personales y alimenta pequeños aparatos en casa con una solución práctica, sostenible y diseñada para acompañarte en tu día a día.</p>
+        </div>
+    </header>
+    <div class="background-example">
+        <main>
+            <section id="content">
+                <section id="container2">
+                    <input type="text" id="itemInput" placeholder="¿Qué producto está buscando?">
+                    <button onclick="addItem()">Agregar</button>
+                    <div class="grid" id="itemGrid"></div>
+                </section>
+                <h1>Ropa</h1>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/1.png" alt="Ropa 1">
+                        <div class="text-container">
+                            <p class="item-title">KineTico</p>
+                            <p class="item-price">S/50.00</p>
+                            <button onclick="addToCart('Ropa de verano', 50)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/2.png" alt="Ropa 2">
+                        <div class="text-container">
+                            <p class="item-title">Volta</p>
+                            <p class="item-price">S/40.00</p>
+                            <button onclick="addToCart('Pantalón polar', 40)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/3.png" alt="Ropa 3">
+                        <div class="text-container">
+                            <p class="item-title">MobiCharge</p>
+                            <p class="item-price">S/45.00</p>
+                            <button onclick="addToCart('Vestido', 45)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/4.png" alt="Ropa 4">
+                        <div class="text-container">
+                            <p class="item-title">Energeia</p>
+                            <p class="item-price">S/30.00</p>
+                            <button onclick="addToCart('Camiseta', 30)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/5.png" alt="Ropa 5">
+                        <div class="text-container">
+                            <p class="item-title">Dynamo</p>
+                            <p class="item-price">S/80.00</p>
+                            <button onclick="addToCart('Chaqueta', 80)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/6.png" alt="Ropa 6">
+                        <div class="text-container">
+                            <p class="item-title">Kinetic</p>
+                            <p class="item-price">S/60.00</p>
+                            <button onclick="addToCart('Sudadera', 60)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/7.png" alt="Ropa 7">
+                        <div class="text-container">
+                            <p class="item-title">Ampere</p>
+                            <p class="item-price">S/35.00</p>
+                            <button onclick="addToCart('Falda', 35)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/8.png" alt="Ropa 8">
+                        <div class="text-container">
+                            <p class="item-title">PulsePower</p>
+                            <p class="item-price">S/90.00</p>
+                            <button onclick="addToCart('Abrigo', 90)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/9.png" alt="Ropa 9">
+                        <div class="text-container">
+                            <p class="item-title">Sustenta</p>
+                            <p class="item-price">S/50.00</p>
+                            <button onclick="addToCart('Jeans', 50)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/10.png" alt="Ropa 10">
+                        <div class="text-container">
+                            <p class="item-title">E-Move</p>
+                            <p class="item-price">S/25.00</p>
+                            <button onclick="addToCart('Shorts', 25)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/11.png" alt="Ropa 11">
+                        <div class="text-container">
+                            <p class="item-title">GiroWatt</p>
+                            <p class="item-price">S/40.00</p>
+                            <button onclick="addToCart('Blusa', 40)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                    <div class="flex-item">
+                        <img src="../niños/imagenes4/12.png" alt="Ropa 12">
+                        <div class="text-container">
+                            <p class="item-title">Nexus Energy</p>
+                            <p class="item-price">S/30.00</p>
+                            <button onclick="addToCart('Leggings', 30)">Agregar al carrito</button>
+                            <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+   </div>
+    <!-- Carrito de compras -->
+    <div id="cart" class="cart" style="display:none;">
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Total: S/0.00</p>
+        <button onclick="clearCart()">Vaciar Carrito</button>
+        <button onclick="window.location.href='checkout.html'">Comprar producto</button>
+    </div>
+    <script src="carrito.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCqbUp_aTR3PRjJT02T1E8KrVJgW_7ly_A",
+          authDomain: "new-fashion-vision.firebaseapp.com",
+          projectId: "new-fashion-vision",
+          storageBucket: "new-fashion-vision.appspot.com",
+          messagingSenderId: "41705181790",
+          appId: "1:41705181790:web:666cb0db49a3b60b9c1acf"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+      <style>
+.flex-item img {
+  max-width: 100%;
+  height: auto;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+</style>
+</body>
+</html>

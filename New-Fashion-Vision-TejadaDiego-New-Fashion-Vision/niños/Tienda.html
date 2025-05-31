@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KineHome Pulse</title>
+    <link rel="stylesheet" href="niños.css"> <!-- Asegúrate de cambiar también el CSS -->
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="reloj.png" class="menu-icono" alt="Menu Icon">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index/index1.html">Inicio</a></li>
+                    <li><a href="../niños/Tienda.html">Tienda</a></li>
+                    <li><a href="../contacto-nosotros/contacto.html">Contacto</a></li>
+                    <li><a href="../contacto-nosotros/sobre-nosotros.html">Nosotros somos</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="background-animation"></div>
+        <div class="header-content">
+            <h1>KineHomePulse</h1>
+            <p>
+                Bienvenidos a KineHomePulse. Escoge tu modelo
+Encuentra la pulsera KineHome Pulse perfecta para ti. Cada diseño combina estilo, comodidad y tecnología para que puedas generar tu propia energía mientras te mueves. Elige el modelo que mejor se adapte a tu ritmo de vida y comienza a cargar tus dispositivos de forma ecológica y práctica.
+            </p>
+        </div>
+    </header>
+
+    <div class="background-example">
+        <main>
+            <section id="content">
+                <h1>Catálogo de Productos</h1>
+                <p>Explora nuestros productos sostenibles y tecnológicos</p>
+                <div class="flex-container">
+                    <div class="border-example">
+                        <a href="ropa.html">
+                            <img src="../niños/imagenes4/hombre.png" alt="Pulsera KineHome">
+                            <p>Pulsera KineHome para Hombres</p>
+                        </a>
+                    </div>
+                    <div class="border-example">
+                        <a href="zapatillas.html">
+                            <img src="../niños/imagenes4/mujer.png" alt="Pulsera KineHome">
+                            <p>Pulsera KineHome para Mujeres</p>
+                        </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Firebase setup -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyCqbUp_aTR3PRjJT02T1E8KrVJgW_7ly_A",
+            authDomain: "new-fashion-vision.firebaseapp.com",
+            projectId: "new-fashion-vision",
+            storageBucket: "new-fashion-vision.appspot.com",
+            messagingSenderId: "41705181790",
+            appId: "1:41705181790:web:666cb0db49a3b60b9c1acf"
+        };
+
+        const app = initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Carrito de compras -->
+    <div id="cart" class="cart" style="display:none;">
+        <ul id="cartItems"></ul>
+        <p id="totalPrice">Total: S/0.00</p>
+        <button onclick="clearCart()">Vaciar Carrito</button>
+        <button onclick="window.location.href='checkout.html'">Comprar Producto</button>
+    </div>
+    <script src="carrito.js"></script>
+</body>
+</html>
+

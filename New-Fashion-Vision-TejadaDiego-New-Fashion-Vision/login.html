@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-wrapper">
+        <form id="login-form" action="login.php" method="post"> <!-- Cambiado el action a login.php -->
+            <h2>Login</h2>
+            <div class="input-field">
+                <input type="email" id="email" name="email" required>
+                <label for="email">Enter your email</label>
+            </div>
+            <div class="input-field">
+                <input type="password" id="password" name="password" required>
+                <label for="password">Enter your password</label>
+            </div>
+            <div class="password-options">
+                <label for="remember">
+                    <input type="checkbox" id="remember" name="remember">
+                    <span>Remember me</span>
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <label>
+            <a href="beneficios.html">Ver beneficios</a>
+            </label>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script src="script10.js"></script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCd-lfWnYLCazfALCmua_8qrdyN9RLwcKY",
+          authDomain: "new-fashion-vision-3ea11.firebaseapp.com",
+          projectId: "new-fashion-vision-3ea11",
+          storageBucket: "new-fashion-vision-3ea11.appspot.com",
+          messagingSenderId: "451890363652",
+          appId: "1:451890363652:web:94fc93581dd8f04285e451"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</body>
+</html>

@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "DM Serif Text", serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url('../index/imagenes2/images.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh; 
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: antiquewhite;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: beige;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(113, 188, 201);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: wheat;
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: antiquewhite;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #61c9a8;
+    color: rgb(42, 43, 39);
+    text-transform: uppercase;
+}
+
+.btn-1:hover {
+    background-color: #9ccebe;
+}
+
+.polo {
+    padding: 100px 0;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    background-image: linear-gradient(to right, #fdf7ff,rgb(241, 235, 198));
+}
+
+.polo-content {
+    text-align: center;
+}
+
+.polo-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p {
+    font-size: 16px;
+    color: #323337;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.ropa-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.ropa-1 {
+    padding: 0 25px;
+}
+
+.ropa-1 img {
+    width: 220px;
+}
+.ropa-2 img {
+    width: 200px;
+}
+.ropa-3 img {
+    width: 250px;
+}
+
+.polo-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ropa-group h3 {
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+} 
+
+.services {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url('../index/imagenes2/images.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+.services-content {
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    color: antiquewhite;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.services-1 {
+    padding: 0 100px;
+}
+
+.services-1 img {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.services-1 h3 {
+    color: azure;
+}
+
+.general {
+    display: flex;
+    min-height: 50vh;
+}
+
+.general-1 {
+    width: 50%;
+    padding: 50px; 
+    background-color: #ed9840;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left; 
+}
+
+.general-1 h2 {
+    font-size: 35px; 
+    line-height: 45px;
+    color: #232425;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.general-1 p {
+    font-size: 16px;
+    color: #222324;
+    margin: 25px 0;
+    width: 100%; 
+}
+
+.general-1 .btn-1 {
+    margin-top: 20px; 
+}
+
+.general-2, .general-3 {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    min-height: 50vh;
+}
+
+.general-2 {
+    background-image: url('../index/imagenes2/modelosjovenes.jpg');
+    animation: slideIn 2s;
+}
+
+.general-3 {
+    background-image: url('../index/imagenes2/niños.jpg');
+    animation: slideIn 2s;
+}
+
+.blog {
+   padding: 150px;
+    text-align: center;
+}
+
+.blog-content {
+    display: flex;
+    justify-content: space-between;
+}
+.blog-1 {
+    padding: 15px 55px;
+}
+.blog-1 img {
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-1 h3 {
+    font-size: 25px;
+    color: #222324;
+}
+.blog-2 {
+    padding: 15px 55px;
+}
+.blog-2 img {
+    width: 228px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.blog-2 h3 {
+    font-size: 25px;
+    color: #222324;
+}
+
+.footer {
+    padding: 100px 0;
+    background-color: #222324;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 18px;
+    color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.link a {
+    font-size: 16px;
+    color: azure;
+    display: block;
+    margin-bottom: 15px;
+}
+
+
+.blog {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.blog p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.blog-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.blog-post {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.blog-post:hover {
+    transform: translateY(-5px);
+}
+
+.blog-post img {
+    width: 100%;
+    height: auto;
+}
+
+.blog-post h3 {
+    font-size: 1.3rem;
+    color: #0077cc;
+    margin: 15px 0 10px;
+}
+
+.blog-post p {
+    padding: 0 15px 20px;
+    font-size: 1rem;
+    color: #444;
+}
+
+.btn-1 {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #0077cc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-1:hover {
+    background: #005fa3;
+}
+
+.polo-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.titulo-central {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sombrero-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Esto centra horizontalmente la imagen y el texto */
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap; /* Por si estás en pantalla pequeña */
+  text-align: left;
+}
+
+.sombrero-img {
+  width: 90px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+  .sombrero-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .sombrero-img {
+    margin-bottom: 10px;
+  }
+}
+
+/* Para la sección completa de sombreros */
+.polo-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Para el contenedor de cada sombrero-item */
+.sombrero-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Para alinear el texto a la izquierda de la imagen */
+  width: 80%; /* Ajusta el ancho según prefieras */
+  max-width: 600px; /* Ajusta el máximo según prefieras */
+  margin: 20px 0;
+  background-color: #f9f9f9; /* Opcional: fondo */
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Ajusta la imagen de sombrero */
+.sombrero-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* Ajusta el texto dentro de sombrero-item */
+.sombrero-item h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.sombrero-item ul {
+  margin: 5px 0 0 0;
+  padding-left: 20px;
+}

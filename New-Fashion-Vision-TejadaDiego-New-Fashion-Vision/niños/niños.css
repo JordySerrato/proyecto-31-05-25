@@ -1,0 +1,241 @@
+/* === MANTENEMOS TU CSS ORIGINAL ARRIBA === */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "DM Serif Text", serif;
+}
+
+.container {
+    max-width: 2000px;
+    margin: 10px solid;
+    background-color: #000000;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)
+    ), url('../index/imagenes2/images.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh; 
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    position: relative;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: beige;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(113, 188, 201);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 75px;
+    line-height: 80px;
+    color: rgb(228, 228, 228);
+    text-transform: uppercase;
+    margin-bottom: 55px;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: antiquewhite;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+/* === AQUÍ EMPIEZA LA PARTE MEJORADA ABAJO === */
+
+/* Animación fondo degradado */
+
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #2506d4, #fad0c4);
+    animation: colorGradient 15s infinite;
+    z-index: -1;
+}
+
+.background-example {
+    position: relative;
+    z-index: 1;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+#content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: wheat;
+}
+
+#content p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.border-example {
+    background: #1a1a1a;
+    border: 4px double #e11900;
+    border-radius: 20px 10px 20px 10px;
+    box-shadow: 5px 5px 15px #000000;
+    padding: 20px;
+    max-width: 280px;
+    flex: 1 1 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.border-example:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px #e11900;
+}
+
+.border-example img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #e11900;
+}
+
+.border-example p {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cart {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    width: 320px;
+    max-height: 80vh;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #e11900;
+    overflow-y: auto;
+    color: #eee;
+    z-index: 1000;
+    display: none;
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+.cart ul li {
+    padding: 10px 5px;
+    border-bottom: 1px solid #e11900;
+}
+
+.cart p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #e11900;
+}
+
+.cart button {
+    background-color: #e11900;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cart button:hover {
+    background-color: #a30d00;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header-content p {
+        padding: 0 10px;
+        font-size: 1rem;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .border-example {
+        max-width: 90%;
+    }
+}

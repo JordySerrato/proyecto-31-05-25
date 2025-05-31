@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Profesor Ficticio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function guardarContacto(event) {
+            event.preventDefault();
+            
+            const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const comentario = document.getElementById('comentario').value;
+
+            const contacto = {
+                nombre,
+                email,
+                comentario,
+                fecha: new Date().toISOString()
+            };
+
+            let contactos = localStorage.getItem('contactos');
+            if (contactos) {
+                contactos = JSON.parse(contactos);
+            } else {
+                contactos = [];
+            }
+
+            contactos.push(contacto);
+            localStorage.setItem('contactos', JSON.stringify(contactos));
+
+            alert('Contacto guardado exitosamente');
+            document.getElementById('contacto-form').reset();
+        }
+
+        function exportarContactos() {
+            const contactos = localStorage.getItem('contactos');
+            if (contactos) {
+                const blob = new Blob([contactos], { type: 'text/plain;charset=utf-8' });
+                const link = document.createElement('a');
+                link.href = URL.createObjectURL(blob);
+                link.download = 'contactos.txt';
+                link.click();
+            } else {
+                alert('No hay contactos para exportar');
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="../index/index1.html">Inicio</a></li>
+                <li><a href="../niños/niños.html">Niños</a></li>
+                <li><a href="../Adultos/adultos.html">Adultos</a></li>
+                <li><a href="../jovenes/jovenes.html">Jovenes</a></li>
+                <li><a href="../contacto-nosotros/contacto.html">Contacto</a></li>
+                <li><a href="../contacto-nosotros/sobre-nosotros.html">Nosotros somos</a></li>
+                <li><a href="../colaboraciones/cola.html">Colaboraciones</a></li>
+</ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de este formulario.</p>
+            <form id="contacto-form" onsubmit="guardarContacto(event)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+                
+                <div class="form-footer">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+            <button onclick="exportarContactos()">Exportar Contactos</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+    </footer>
+<<<<<<< HEAD
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCqbUp_aTR3PRjJT02T1E8KrVJgW_7ly_A",
+          authDomain: "new-fashion-vision.firebaseapp.com",
+          projectId: "new-fashion-vision",
+          storageBucket: "new-fashion-vision.appspot.com",
+          messagingSenderId: "41705181790",
+          appId: "1:41705181790:web:666cb0db49a3b60b9c1acf"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+=======
+>>>>>>> 0feec0d083d5b1e35bd61a2a18abc1d2d1b03f8a
+</body>
+</html>
